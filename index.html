@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="../static/css/animate.css">
-        <link rel="stylesheet" href="../static/css/styles.css">
+        <link rel="stylesheet" href="static/css/animate.css">
+        <link rel="stylesheet" href="static/css/styles.css">
     </head>
     <body>
         <div class="loader-wrapper">
@@ -21,6 +21,7 @@
         <div id="popup">
             <h1 class="title">C O N V E R S I O N</h1>
             <p id="ok" href="#">no text entered</p>
+            <a id="back" href="javascript:void(0);">go back</a>
             <a class="btn btn-5" href="https://twitter.com/intent/tweet?text=ok*!%20i%20just%20used%20the%20playboi%20carti%20translator%20on%20https://carti.club%20%F0%9F%A6%8B*%20it%27s%20lit+!" target="_blank">Share on Twitter</a>
         </div>
         
@@ -59,14 +60,13 @@
                  
             });
 
-                $("#submit").click(function(event) {
-                if (event.target.id == "sdasdubmit") {
+                $("#back").click(function(event) {
+                if (event.target.id == "back") {
                     
                     $("#popup").fadeOut(525);
                 }
                 });
             
-                new WOW().init();
             
         
         </script>

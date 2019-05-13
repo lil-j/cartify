@@ -123,7 +123,10 @@ body {
     text-align: center;
   }
   
-
+#back {
+  color:white;
+  
+}
 
 .loader-wrapper {
     width: 100%;
