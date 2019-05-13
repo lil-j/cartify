@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cartify</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/animate.css">
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <div class="site-container">
+                <h1 id="header" href="#">C A R T I . C L U B</h1>
+                <input type="text" id="ip2" required placeholder="type to become playboi carti"/>
+                <button id="submit" type="submit" href="javascript:void(0);">✓</button>
+        </div>
+        <div id="popup">
+            <h1 class="title">C O N V E R S I O N</h1>
+            <p id="ok" href="#">no text entered</p>
+            <a class="btn btn-5" href="https://twitter.com/intent/tweet?text=ok*!%20i%20just%20used%20the%20playboi%20carti%20translator%20on%20https://carti.club%20%F0%9F%A6%8B*%20it%27s%20lit+!" target="_blank">Share on Twitter</a>
+        </div>
+        
+          
+
+
+        <script type=text/javascript>
+                //Loader
+                $(window).on("load",function(){
+                    $(".loader-wrapper").fadeOut("slow");
+                });
+
+
+                // Popup
+                $("#popup").hide();
+
+                $("#submit").click(function() {
+                console.log(document.getElementById('ok').innerHTML)
+                var min=1; 
+                var max=3;  
+                var random =Math.floor(Math.random() * (+max - +min)) + +min;
+                console.log(random)
+                if (random == 1) {
+                    document.getElementById('ok').innerHTML = "🖤 "+document.getElementById('ip2').value.toUpperCase() + " 🦋 DIE LIT *+ _ SLATT !";
+                }
+                else if (random == 2) {
+                    document.getElementById('ok').innerHTML = "++** +:) "+document.getElementById('ip2').value.toLowerCase() + " ! lit **!++";
+                }
+                var field = document.getElementById('ip2')
+                var msg = field.value
+                field.value=""   
+                $("#popup").fadeIn(525, function() {
+                    $(this).focus();
+                    
+                });
+                 
+            });
+
+                $("#submit").click(function(event) {
+                if (event.target.id == "sdasdubmit") {
+                    
+                    $("#popup").fadeOut(525);
+                }
+                });
+            
+                new WOW().init();
+            
+        
+        </script>
+
+        
+        
+    </body>
+</html>
